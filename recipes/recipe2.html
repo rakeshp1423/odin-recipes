@@ -1,51 +1,133 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta http-equiv="sample" content="html; charset=utf-8" />
-        <link rel="stylesheet" href="styles.css"/>
-        <title>Recipe 2</title>
-        
-    </head>
-    <body>
-        <h1>Linguini with Roasted Braccoli Pesto</h1>
-        <img src="https://www.allrecipes.com/thmb/bvq0DaipVMo5-8292L8ZubP482o=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/7244443-2000-1bde4582e1d548b2b17db9107a91a85f.jpg">
-        <h2>Descriptoin</h2>
-        <p>"Roasting the veggies in the oven makes all the difference," recipe creator caterwauler says. Toasted pine nuts add a satisfying crunch.This pasta was an effort to use up the rest of the veggies on hand, and turned out to be kind of amazing. Roasting the veggies in the oven makes all the difference for the pesto.</p>
-        <h2>Ingredients</h2>
-        <ul>
-            <li>½ (16 ounce) package linguine pasta</li>
-            <li>1 large head broccoli, trimmed and chopped</li>
-            <li>½ cup pine nuts, chopped</li>
-            <li> ¼ cup grated Parmesan cheese </li>
-            <li>5 cloves garlic, crushed</li>
-            <li>5 tablespoons extra-virgin olive oil , divided</li>
-            <li>2 tablespoons lemon-pepper seasoning</li>
-            <li>½ teaspoon chicken soup base (such as Better than Bouillon®)</li>
-            <li>1 teaspoon extra-virgin olive oil</li>
-            <li>2 medium tomatoes, chopped</li>
-            <li>1 teaspoon red pepper flakes</li>
-            <li>salt to taste</li>
-            <li>1 tablespoon butter</li>
-            <li>1 dash balsamic vinegar (Optional)</li>
-        
-        </ul>
-        <h2>Steps</h2>
-        <h3>Step 1</h3>
-        <p1>Bring a large pot of lightly salted water to a boil. Cook linguine at a boil until tender yet firm to the bite, about 11 minutes.</p1>
-        <h3>Step 2</h3>
-        <p>Meanwhile, preheat the oven to 400 degrees F (200 degrees C).</p>
-        <h3>Step 3</h3>
-        <p>Combine broccoli and pine nuts in a baking dish. Add Parmesan cheese, garlic, 3 tablespoons olive oil, and lemon-pepper seasoning; toss to coat.</p>
-        <h3>Step 4</h3>
-        <p>Bake in the preheated oven, removing every 5 minutes to stir, until broccoli is tender but still firm, 10 to 15 minutes.</p>
-        <h3>Step 5</h3>
-        <p>Drain pasta, reserving 1 to 2 tablespoons of the cooking liquid. Mix cooking liquid with soup base in a small bowl; set aside. Return pasta to the pot.</p>
-        <h3>Step 6</h3>
-        <p>Heat 1 teaspoon olive oil in a large skillet over high heat. Add tomatoes, red pepper flakes, and salt. Cook, stirring often until some of the liquid has reduced, 3 to 5 minutes. Reduce the heat to low and add broccoli mixture, 2 tablespoons olive oil, butter, and balsamic vinegar; stir to combine.</p>
-        <h3>Step 7</h3>
-        <p>Transfer the entire vegetable mixture to the pasta pot. Add bouillon water, stir thoroughly, and serve immediately.</p>
+<head>
+    <meta http-equiv="sample" content="html; charset=utf-8" />
+    <!-- <link rel="stylesheet" href="styles.css"/> -->
+    <title>Linguini with Roasted Broccoli Pesto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #40445f;
+            color: #e7d8d8;
+            margin: 0;
+            padding: 0;
+        }
+        #navbar {
+            background-color: #322d3f;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            color: #9d9d9d;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #title {
+            color: #be5959;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        #search-bar {
+            padding: 8px;
+            border: none;
+            border-radius: 4px;
+            width: 200px;
+        }
+        #nav-links {
+            display: flex;
+        }
+        #nav-links a {
+            color: #c1bdbd;
+            text-decoration: none;
+            margin-right: 20px;
+            font-weight: bold;
+        }
+        #nav-links a:hover {
+            color: #ff2e63;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            color: #ff2e63;
+            text-align: center;
+        }
+        p, p1 {
+            text-align: justify;
+            color: #dadada;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        ul, ol {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+        .cook-note {
+            background-color: #544d8b;
+            color: #e7d8d8;
+            border-radius: 8px;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <div id="title">eat, sleep and repeat</div>
+        <input type="text" id="search-bar" placeholder="Search...">
+        <div id="nav-links">
+            <a href="#">About</a>
+            <a href="#">My Profile</a>
+            <a href="#">Favorite</a>
+        </div>
+    </div>
+<div class="container">
+    <img src="https://www.allrecipes.com/thmb/bvq0DaipVMo5-8292L8ZubP482o=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/7244443-2000-1bde4582e1d548b2b17db9107a91a85f.jpg" alt="Linguini with Roasted Broccoli Pesto" />
+    <h2>Description</h2>
+    <p>"Roasting the veggies in the oven makes all the difference," recipe creator caterwauler says. Toasted pine nuts add a satisfying crunch. This pasta was an effort to use up the rest of the veggies on hand and turned out to be kind of amazing. Roasting the veggies in the oven makes all the difference for the pesto.</p>
+    <h2>Ingredients</h2>
+    <ul>
+        <li>½ (16 ounce) package linguine pasta</li>
+        <li>1 large head broccoli, trimmed and chopped</li>
+        <li>½ cup pine nuts, chopped</li>
+        <li>¼ cup grated Parmesan cheese</li>
+        <li>5 cloves garlic, crushed</li>
+        <li>5 tablespoons extra-virgin olive oil, divided</li>
+        <li>2 tablespoons lemon-pepper seasoning</li>
+        <li>½ teaspoon chicken soup base (such as Better than Bouillon®)</li>
+        <li>1 teaspoon extra-virgin olive oil</li>
+        <li>2 medium tomatoes, chopped</li>
+        <li>1 teaspoon red pepper flakes</li>
+        <li>salt to taste</li>
+        <li>1 tablespoon butter</li>
+        <li>1 dash balsamic vinegar (Optional)</li>
+    </ul>
+    <h2>Steps</h2>
+    <ol>
+        <li><h3>Step 1</h3><p1>Bring a large pot of lightly salted water to a boil. Cook linguine at a boil until tender yet firm to the bite, about 11 minutes.</p1></li>
+        <li><h3>Step 2</h3><p>Meanwhile, preheat the oven to 400 degrees F (200 degrees C).</p></li>
+        <li><h3>Step 3</h3><p>Combine broccoli and pine nuts in a baking dish. Add Parmesan cheese, garlic, 3 tablespoons olive oil, and lemon-pepper seasoning; toss to coat.</p></li>
+        <li><h3>Step 4</h3><p>Bake in the preheated oven, removing every 5 minutes to stir, until broccoli is tender but still firm, 10 to 15 minutes.</p></li>
+        <li><h3>Step 5</h3><p>Drain pasta, reserving 1 to 2 tablespoons of the cooking liquid. Mix cooking liquid with soup base in a small bowl; set aside. Return pasta to the pot.</p></li>
+        <li><h3>Step 6</h3><p>Heat 1 teaspoon olive oil in a large skillet over high heat. Add tomatoes, red pepper flakes, and salt. Cook, stirring often until some of the liquid has reduced, 3 to 5 minutes. Reduce the heat to low and add broccoli mixture, 2 tablespoons olive oil, butter, and balsamic vinegar; stir to combine.</p></li>
+        <li><h3>Step 7</h3><p>Transfer the entire vegetable mixture to the pasta pot. Add bouillon water, stir thoroughly, and serve immediately.</p></li>
+    </ol>
+    <div class="cook-note">
         <h2>Cook's Note :</h2>
         <p>You can use any Italian cheese, such as Romano, in place of the Parmesan.</p>
-        <h1>That's it .. Now enjoy your food :)</h1>
-    </body>
+    </div>
+</div>
+</body>
 </html>
