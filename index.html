@@ -1,44 +1,128 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <meta charset=utf-8" >
-        <title>
-            Odin Recipes
-        </title>
-        <style type="text/css" media="all">
-            body {
-                background-color:lightblue;
-            }
-            #title{
-                background-color: red;
-                font-family: "Brush Script MT",Cursive;
-                font-size: 22px;
-                font-weighr: 300;
-            }
-            img{
-                height: auto;
-                width: 1080px;
-            }
-    
-            
-            
-        </style>
-        
-    </head>
-    <body>
-      <div id="title"> <h1>#FOODIE<h1> </div>
-      <p>eat,sleep and repeat</p>
-      <img src="https://s.abcnews.com/images/GMA/lunchbox-1-ht-er-181010_hpMain_v4x3_16x9_608.jpg">
-      <p>This blog will feature some of the most well-known foods from around the world.</p>
-      <h2>About</h2>
-        Eating is one of life's greatest pleasures, and for foodies, it's an experience that goes beyond mere sustenance. It's a way of life. One of the most exciting things about being a foodie is discovering new flavors and cuisines from around the world, and what better way to do that than by exploring the local food scene through a food tour or a food crawl!
-        So here aree some famous food list you may want to try :)
+<head>
+    <meta charset="utf-8">
+    <title>Odin Recipes</title>
+    <style type="text/css" media="all">
+        body {
+            background-color: #40445f;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        #navbar {
+            background-color: #322d3f;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            color: #9d9d9d;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #title {
+            color: #be5959;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        #search-bar {
+            padding: 8px;
+            border: none;
+            border-radius: 4px;
+            width: 200px;
+        }
+        #nav-links {
+            display: flex;
+        }
+        #nav-links a {
+            color: #c1bdbd;
+            text-decoration: none;
+            margin-right: 20px;
+            font-weight: bold;
+        }
+        #nav-links a:hover {
+            color: #ff2e63;
+        }
+        #content {
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .section {
+            background-color: #544d8b;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+            flex: 1;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            flex: 1;
+        }
+        h1, h2, h3 {
+            color: #e7d8d8;
+            text-align: center;
+            padding: 10px 0;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #dadada;
+            text-align: center;
+            padding: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        ul li a:hover {
+            color: #ff2e63;
+        }
+    </style>
+</head>
+<body>
+<div id="navbar">
+    <div id="title">eat, sleep and repeat</div>
+    <input type="text" id="search-bar" placeholder="Search...">
+    <div id="nav-links">
+        <a href="#">About</a>
+        <a href="#">My Profile</a>
+        <a href="#">Favorite</a>
+    </div>
+</div>
+<div id="content">
+    <img src="https://s.abcnews.com/images/GMA/lunchbox-1-ht-er-181010_hpMain_v4x3_16x9_608.jpg">
+    <div class="section">
+        <p>This blog will feature some of the most well-known foods from around the world.</p>
+    </div>
+    <div class="section">
+        <h2>About</h2>
+        <p>Eating is one of life's greatest pleasures, and for foodies, it's an experience that goes beyond mere sustenance. It's a way of life. One of the most exciting things about being a foodie is discovering new flavors and cuisines from around the world, and what better way to do that than by exploring the local food scene through a food tour or a food crawl! So here are some famous food lists you may want to try :)</p>
+    </div>
+    <div class="section">
         <h2>The List</h2>
-      <ul>
-        <li><a href="recipes/churros.html"><h3>Churros II</h3> </a></li>
-        <li><a href="recipes/recipe2.html"><h3>Linguini with Roasted Broccoli Pesto</h3></li>
-        <li><a href="recipes/recipe3.html"><h3>Italian Chicken Marinade</h3></li> 
-      </ul>
-     
-    </body>
+        <ul>
+            <li><a href="recipes/churros.html"><h3>Churros II</h3></a></li>
+            <li><a href="recipes/recipe2.html"><h3>Linguini with Roasted Broccoli Pesto</h3></a></li>
+            <li><a href="recipes/recipe3.html"><h3>Italian Chicken Marinade</h3></a></li>
+        </ul>
+    </div>
+</div>
+</body>
 </html>
