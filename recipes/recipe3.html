@@ -1,43 +1,121 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta http-equiv="sample" content="text/html; charset=utf-8" />
-        <link rel="stylesheet" href="styles.css"/>
-        <title>Recipe 3</title>
-        <style>
-            img {
-                height: auto;
-                width: 500px;
-            }
-        </style>
-        
-    </head>
-    
-    <body>
-        
-        <h1>Italian Chicken Marinade</h1>
-        <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F43%2F2022%2F07%2F09%2F665982-italian-chicken-marinade-wannabe-chefette-4x3-1.jpg&q=60&c=sc&orient=true&poi=auto&h=512">
-        <h2>Description</h2>
-        <p>"This Italian dressing chicken marinade is a super simple but delicious way to add flavor before grilling.</p>
-        <h2>Ingredients</h2>
-        <ul>
-            <li>1 (16 ounce) bottle Italian-style salad dressing</li>
-            <li>1 teaspoon garlic powder</li>
-            <li>1 teaspoon salt</li>
-            <li>4 skinless, boneless chicken breast halves</li>
-        
-        </ul>
-        <h2>Steps</h2>
-        <h3>Step 1</h3>
-        <p>Whisk salad dressing, garlic powder, and salt together in a shallow baking dish; add chicken breasts and turn to coat. Cover the dish with plastic wrap and marinate in the refrigerator, 4 hours to overnight.</p>
-        <h3>Step 2</h3>
-        <p>Preheat an outdoor grill for high heat and lightly oil the grate.</p>
-        <h3>Step 3</h3>
-        <p>Remove chicken from marinade and shake off excess; discard remaining marinade.</p>
-        <h3>Step 4</h3>
-        <p> Cook chicken on the preheated grill until no longer pink in the center and the juices run clear, about 7 to 8 minutes on each side. An instant-read thermometer inserted into the center should read at least 165 degrees F (74 degrees C).</p>
+<head>
+    <meta http-equiv="sample" content="text/html; charset=utf-8" />
+    <!-- <link rel="stylesheet" href="styles.css"/> -->
+    <title>Italian Chicken Marinade</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #40445f;
+            color: #e7d8d8;
+            margin: 0;
+            padding: 0;
+        }
+        #navbar {
+            background-color: #322d3f;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            color: #9d9d9d;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #title {
+            color: #be5959;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        #search-bar {
+            padding: 8px;
+            border: none;
+            border-radius: 4px;
+            width: 200px;
+        }
+        #nav-links {
+            display: flex;
+        }
+        #nav-links a {
+            color: #c1bdbd;
+            text-decoration: none;
+            margin-right: 20px;
+            font-weight: bold;
+        }
+        #nav-links a:hover {
+            color: #ff2e63;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            color: #ff2e63;
+            text-align: center;
+        }
+        p {
+            text-align: justify;
+            color: #dadada;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        ul, ol {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+        .cook-note {
+            background-color: #544d8b;
+            color: #e7d8d8;
+            border-radius: 8px;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="navbar">
+        <div id="title">eat, sleep and repeat</div>
+        <input type="text" id="search-bar" placeholder="Search...">
+        <div id="nav-links">
+            <a href="#">About</a>
+            <a href="#">My Profile</a>
+            <a href="#">Favorite</a>
+        </div>
+    </div>
+<div class="container">
+    <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F43%2F2022%2F07%2F09%2F665982-italian-chicken-marinade-wannabe-chefette-4x3-1.jpg&q=60&c=sc&orient=true&poi=auto&h=512" alt="Italian Chicken Marinade" />
+    <h2>Description</h2>
+    <p>"This Italian dressing chicken marinade is a super simple but delicious way to add flavor before grilling.</p>
+    <h2>Ingredients</h2>
+    <ul>
+        <li>1 (16 ounce) bottle Italian-style salad dressing</li>
+        <li>1 teaspoon garlic powder</li>
+        <li>1 teaspoon salt</li>
+        <li>4 skinless, boneless chicken breast halves</li>
+    </ul>
+    <h2>Steps</h2>
+    <ol>
+        <li><h3>Step 1</h3><p>Whisk salad dressing, garlic powder, and salt together in a shallow baking dish; add chicken breasts and turn to coat. Cover the dish with plastic wrap and marinate in the refrigerator, 4 hours to overnight.</p></li>
+        <li><h3>Step 2</h3><p>Preheat an outdoor grill for high heat and lightly oil the grate.</p></li>
+        <li><h3>Step 3</h3><p>Remove chicken from marinade and shake off excess; discard remaining marinade.</p></li>
+        <li><h3>Step 4</h3><p>Cook chicken on the preheated grill until no longer pink in the center and the juices run clear, about 7 to 8 minutes on each side. An instant-read thermometer inserted into the center should read at least 165 degrees F (74 degrees C).</p></li>
+    </ol>
+    <div class="cook-note">
         <h2>Cook's Note :</h2>
         <p>The nutrition data for this recipe includes information for the full amount of the marinade ingredients. Depending on marinating time, ingredients, cook time, etc., the actual amount of the marinade consumed will vary.</p>
-        <h1>That's it .. Now enjoy your food :)</h1>
-    </body>
+    </div>
+</div>
+</body>
 </html>
